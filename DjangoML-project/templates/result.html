@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <br>
+        <h2 style="color: #65b2b5;margin-left: 1em;">The data entred is : </h2>{{ lis }}
+        <br>
+        <br>
+        <br>
+        <center>
+            <h2 style="color: #65b2b5;">The result is : </h2>
+        {% if  ans == 1 %}
+        Pathological
+        {% elif  ans == 2 %} 
+        Suspect
+        {% else %}
+        Normal
+        {% endif %}
+        </center>
+        
+    </body>
+</html>

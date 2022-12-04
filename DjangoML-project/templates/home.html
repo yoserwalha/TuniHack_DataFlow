@@ -1,0 +1,411 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        This is my home page
+        {% csrf_token %}
+        <form action="{% url 'result' %}" >
+       baseline_value : <input type="text" required name="baseline_value" > <br><br>
+       accelerations : <input type="text" required name="accelerations" > <br><br>
+       fetal_movement : <input type="text" required name="fetal_movement" > <br><br>
+       uterine_contractions : <input type="text" required name="uterine_contractions" > <br><br>
+       light_decelerations : <input type="text" required name="light_decelerations" > <br><br>
+       severe_decelerations: <input type="text" required name="severe_decelerations" > <br><br>
+       prolongued_decelerations : <input type="text" required name="prolongued_decelerations" > <br><br>
+       abnormal_short_term_variability : <input type="text" required name="abnormal_short_term_variability" > <br><br>
+       mean_value_of_short_term_variability : <input type="text" required name="mean_value_of_short_term_variability" > <br><br>
+       percentage_of_time_with_abnormal_long_term_variability : <input type="text" required name="percentage_of_time_with_abnormal_long_term_variability" > <br><br>
+       mean_value_of_long_term_variability : <input type="text" required name="mean_value_of_long_term_variability" > <br><br>
+       histogram_width : <input type="text" required name="histogram_width" > <br><br>
+       histogram_min : <input type="text" required name="histogram_min" > <br><br>
+       histogram_max : <input type="text" required name="histogram_max" > <br><br>
+       histogram_number_of_peaks : <input type="text" required name="histogram_number_of_peaks" > <br><br>
+       histogram_number_of_zeroes : <input type="text" required name="histogram_number_of_zeroes" > <br><br>
+       histogram_mode : <input type="text" required name="histogram_mode" > <br><br>
+       histogram_mean : <input type="text" required name="histogram_mean" > <br><br>
+       histogram_median : <input type="text" required name="histogram_median" > <br><br>
+       histogram_variance : <input type="text" required name="histogram_variance" > <br><br>
+       histogram_tendency : <input type="text" required name="histogram_tendency" > <br><br>
+
+
+            <input type="submit" name="" value="Submit">
+        </form>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="static/assets/images/favicon.png" type="">
+
+  <title> MoMis </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/assets/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="static/assets/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="static/assets/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/assets/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <img src="static/assets/images/hero-bg.png" alt="">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              MoMis
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="departments.html">Departments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctors.html">Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      We Provide Best Healthcare
+                    </h1>
+                    <p>
+                        The best earning of life is staying healthy. Staying healthy means being physically, mentally and socially fit and stable. Suppose one knows how to have control over his health, then he knows how to lead a successful life.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      We Provide Best Healthcare
+                    </h1>
+                    <p>
+                        The best earning of life is staying healthy. Staying healthy means being physically, mentally and socially fit and stable. Suppose one knows how to have control over his health, then he knows how to lead a successful life.                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      We Provide Best Healthcare
+                    </h1>
+                    <p>
+                        The best earning of life is staying healthy. Staying healthy means being physically, mentally and socially fit and stable. Suppose one knows how to have control over his health, then he knows how to lead a successful life.                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_margin-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="static/assets/images/about.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About <span>Us</span>
+              </h2>
+            </div>
+            <p>
+                Your fetal care team at Mercy helps make life easier for high-risk moms by coordinating care for you, answering your questions and ensuring you get support every step of the way. 
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+            PREDICT health of fetal        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container contact-form">
+           
+
+
+
+                    {% csrf_token %}
+                    <form action="{% url 'result' %}">
+                    
+                            baseline_value : <input type="text" required name="baseline_value" > <br><br>
+                        
+                            accelerations : <input type="text" required name="accelerations" > <br><br>
+                        
+                   fetal_movement : <input type="text" required name="fetal_movement" > <br><br>
+                   uterine_contractions : <input type="text" required name="uterine_contractions" > <br><br>
+                   light_decelerations : <input type="text" required name="light_decelerations" > <br><br>
+                   severe_decelerations: <input type="text" required name="severe_decelerations" > <br><br>
+                   prolongued_decelerations : <input type="text" required name="prolongued_decelerations" > <br><br>
+                   abnormal_short_term_variability : <input type="text" required name="abnormal_short_term_variability" > <br><br>
+                   mean_value_of_short_term_variability : <input type="text" required name="mean_value_of_short_term_variability" > <br><br>
+                   percentage_of_time_with_abnormal_long_term_variability : <input type="text" required name="percentage_of_time_with_abnormal_long_term_variability" > <br><br>
+                   mean_value_of_long_term_variability : <input type="text" required name="mean_value_of_long_term_variability" > <br><br>
+                   histogram_width : <input type="text" required name="histogram_width" > <br><br>
+                   histogram_min : <input type="text" required name="histogram_min" > <br><br>
+                   histogram_max : <input type="text" required name="histogram_max" > <br><br>
+                   histogram_number_of_peaks : <input type="text" required name="histogram_number_of_peaks" > <br><br>
+                   histogram_number_of_zeroes : <input type="text" required name="histogram_number_of_zeroes" > <br><br>
+                   histogram_mode : <input type="text" required name="histogram_mode" > <br><br>
+                   histogram_mean : <input type="text" required name="histogram_mean" > <br><br>
+                   histogram_median : <input type="text" required name="histogram_median" > <br><br>
+                   histogram_variance : <input type="text" required name="histogram_variance" > <br><br>
+                   histogram_tendency : <input type="text" required name="histogram_tendency" > <br><br>
+            
+                   
+                        <input type="submit" name="" value="Submit">
+                    
+                    </form>
+
+            
+        
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_contact">
+            <h4>
+              Reach at..
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Tunis,Tunisie
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +126 52 188 056
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  momis@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <div class="footer_detail">
+            <h4>
+              About
+            </h4>
+            <p>
+                Your fetal care team at Mercy helps make life easier for high-risk moms by coordinating care for you, answering your questions and ensuring you get support every step of the way.             </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto footer_col">
+          <div class="footer_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="footer_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="departments.html">
+                Departments
+              </a>
+              <a class="" href="doctors.html">
+                Doctors
+              </a>
+              <a class="" href="contact.html">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 footer_col ">
+          <h4>
+            Newsletter
+          </h4>
+          <form action="#">
+            <input type="email" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">DataFlow<br><br></a>
+            &copy; <span id="displayYear"></span> Distributed By
+            <a href="https://themewagon.com/">DataFlow</a>
+        </p>
+       
+      </div>  
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="static/assets/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="static/assets/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="static/assets/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
